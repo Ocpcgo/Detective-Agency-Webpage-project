@@ -20,6 +20,10 @@ body {
     min-height: 3000px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
 .navbar{
     display: flex;
@@ -271,7 +275,54 @@ body {
   
 /* Contact section end */
 
+/* Footer */
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2.5rem;
+}
 
+footer .socials {
+    padding: 1rem;
+}
+
+footer .socials a {
+    color: antiquewhite;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .links {
+    margin-bottom: 1.5rem;
+}
+footer .links a {
+    color: antiquewhite;
+    padding: 0.5rem 1rem;
+}
+
+footer .credit {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+footer .socials a.instagram:hover {
+    color: red; /* Replace with desired color */
+}
+  
+footer .socials a.twitter:hover {
+    color: blue; /* Replace with desired color */
+}
+  
+footer .socials a.facebook:hover {
+    color: green; /* Replace with desired color */
+}
+
+/* Footer end */
 
 /* Media queries start */
 /* Laptop */
