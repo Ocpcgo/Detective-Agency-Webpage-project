@@ -17,6 +17,7 @@ body {
     font-family: 'Courier', sans-serif;
     background-color: var(--bg);
     color: #C0C0C0;
+    min-height: 2000px;
 }
 
 /* Navbar */
@@ -46,8 +47,8 @@ body {
 .navbar .navbar-nav a {
     color: antiquewhite;
     display: inline-block;
-    font-size: 2rem;
-    margin: 0;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 .navbar .navbar-nav a:hover{
     color: var(--primary);
@@ -133,7 +134,51 @@ body {
 }
 /* Hero section end */
 
+/* About section */
 
+.about {
+    padding: 10rem 7% 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* About section end */
 
 /* Media queries start */
 /* Laptop */
@@ -182,6 +227,24 @@ body {
         transform: scaleX(0.5);
     }
 
+    .about .row {
+        flex-wrap: wrap;
+    }
+    
+    .about .row .about-img img {
+        height: 25rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
 }
 /* Handphone */
 @media (max-width: 450px){
