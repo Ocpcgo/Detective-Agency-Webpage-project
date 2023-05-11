@@ -136,17 +136,17 @@ body {
 
 /* About section */
 
-.about, .menu {
+.about, .menu, .contact {
     padding: 10rem 7% 1.4rem;
 }
 
-.about h2, .menu h2 {
+.about h2, .menu h2, .contact h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
 }
 
-.about h2 span, .menu h2 span {
+.about h2 span, .menu h2 span, .contact h2 span {
     color: var(--primary);
 }
 
@@ -182,10 +182,11 @@ body {
 
 /* Menu section */
 
-.menu h2 {
+.menu h2, .contact h2 {
     margin-bottom: 1.3rem;
 }
-.menu p {
+.menu p,
+.contact p {
     text-align: center;
     max-width: 30rem;
     margin: auto;
@@ -215,6 +216,62 @@ body {
 .menu .row .menu-card .menu-card-title {
     margin-top: 1rem auto 1rem;
 }
+/* Menu end */
+
+/* Contact section */
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: rgba(5, 53, 53, 0.47);
+}
+  
+.contact .map-container {
+    flex: 1 1 45rem;
+}
+  
+.contact .map {
+    width: 100%;
+    height: 100%;
+}
+  
+.contact form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+  
+.contact form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #5c5656;
+    padding-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contact form .input-group input {
+    color: #fff; /* Update the text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Update the background color */
+    border: none;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+.contact form button {
+    margin-top: 2rem; /* Adjust the margin-top to move the button further down */
+    color: #fff; /* Update the text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Update the background color */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+  
+/* Contact section end */
+
+
 
 /* Media queries start */
 /* Laptop */
@@ -284,6 +341,18 @@ body {
 
     .menu p {
         font-size: 1.2rem;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map {
+        height: 25rem;
+    }
+
+    .contact .row form {
+        padding-top: 0;
     }
 }
 /* Handphone */
