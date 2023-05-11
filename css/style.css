@@ -173,7 +173,7 @@ body {
 
 .about .row .content p {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-weight: 100;
     line-height: 1.6;
 }
@@ -200,6 +200,7 @@ body {
     margin-top: 5rem;
     justify-content: center;
 }
+
 
 .menu .row .menu-card {
     text-align: center;
