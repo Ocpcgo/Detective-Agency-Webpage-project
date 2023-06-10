@@ -19,10 +19,9 @@ This is a website for a detective agency, showcasing information about the agenc
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/detective-agency-website.git`
+1. Clone the repository: `git clone https://github.com/siriusberg/detective-agency-website.git`
 2. Navigate to the project directory.
 3. Open the HTML file (`index.html`) in a web browser.
-4. Alternatively, you can just type (https://ocpcgo.github.io/Detective-Agency-Webpage-project/) in your browser.
 
 ## Usage
 
